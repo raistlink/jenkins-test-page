@@ -16,7 +16,7 @@ public class BoardController {
 
     ArrayList<Announcement> announcements = new ArrayList<Announcement>();
 
-    @RequestMapping("")
+    @RequestMapping("/webpage")
     public ModelAndView main(HttpSession session) throws SQLException, ClassNotFoundException{
 
         Class.forName("com.mysql.jdbc.Driver");
