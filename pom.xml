@@ -65,7 +65,6 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>myWebpage</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
