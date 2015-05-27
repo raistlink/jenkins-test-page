@@ -26,7 +26,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ThymeleafProject" target="1.4" />
+      <module name="ThymeleafProject" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
