@@ -20,7 +20,7 @@ public class BoardController {
     public ModelAndView main(HttpSession session) throws SQLException, ClassNotFoundException{
 
         Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "admin");
 
         String createDatabase = "CREATE DATABASE IF NOT EXISTS Announcements";
         String createTable = "CREATE TABLE IF NOT EXISTS Anuncios" +
@@ -33,7 +33,7 @@ public class BoardController {
         statement.execute(createDatabase);
         connection.close();
 
-        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "");
+        connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "admin");
         statement = connection.createStatement();
         statement.execute(createTable);
 
@@ -65,7 +65,7 @@ public class BoardController {
         if(name != "" && subject != ""){
             Class.forName("com.mysql.jdbc.Driver");
 
-            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "");
+            Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "admin");
             Statement statement = connection.createStatement();
 
             String insert = "INSERT INTO Anuncios VALUES ('"+name+"','"+subject+"','"+comment+"')";
