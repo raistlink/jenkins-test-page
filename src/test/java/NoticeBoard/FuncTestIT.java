@@ -16,6 +16,7 @@ public class FuncTestIT{
         URL siteBase = new URL("http://localhost:10001/");
         WebDriver drv = new FirefoxDriver();
 
+        drv.get(siteBase.toString());
         assertTrue(drv.getPageSource().contains("Notice Board"));
     }
 }
