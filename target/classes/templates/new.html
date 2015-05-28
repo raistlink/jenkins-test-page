@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <form action="insert" method="post">
+        <h1>New Announcement</h1>
+        <label for="name">Name</label>
+        <input type="text" name="name"
+             id="name" th:value="${name}"/>
+        <br/>
+        <br/>
+        <label for="subject">Subject</label>
+        <input type="text" name="subject"
+               id="subject"/>
+        <br/>
+        <br/>
+        <label for="comment">Comments</label>
+        <textarea name="comment" id="comment" cols="25" rows="5"></textarea>
+        <br/>
+        <br/>
+        <input type="submit"/>
+    </form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<title>Notice Board</title>
+<h1>Notice Board</h1>
+<h2 th:text=" (${isNew} == true)? 'Welcome!' "></h2>
+<tr th:each="a, it : ${announcements}">
+    <a  th:href="@{/{postNumber}(postNumber=${it.index})}"  th:text="${a.name}+' : '+${a.subject}"></a>
+    <br/>
+</tr>
+<br/>
+<br/>
+<a th:href="@{/new}">New Announcement</a>
+</body>
+</html>
