@@ -30,10 +30,10 @@ public class generalIT{
 
         while(rs.next()){
 
-            Announcement anno = new Announcement(rs.getString(0), rs.getString(1), rs.getString(2));
-            assertEquals(anno.getName(), rs.getString(0));
-            assertEquals(anno.getSubject(), rs.getString(1));
-            assertEquals(anno.getComment(), rs.getString(2));
+            Announcement anno = new Announcement(rs.getString(1), rs.getString(2), rs.getString(3));
+            assertEquals(anno.getName(), rs.getString(1));
+            assertEquals(anno.getSubject(), rs.getString(2));
+            assertEquals(anno.getComment(), rs.getString(3));
         }
     }
 
