@@ -19,7 +19,7 @@ import static org.junit.Assert.*;
 public class generalIT{
 
     @Test
-    public void testDatabase() throws Exception{
+    public void testDatabaseSelect() throws Exception{
 
         Class.forName("com.mysql.jdbc.Driver");
         Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "admin");
@@ -35,6 +35,33 @@ public class generalIT{
             assertEquals(anno.getSubject(), rs.getString(2));
             assertEquals(anno.getComment(), rs.getString(3));
         }
+
+        connection.close();
+    }
+
+    @Test
+    public void testDatabaseInput() throws Exception{
+        Class.forName("com.mysql.jdbc.Driver");
+
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "admin");
+        Statement statement = connection.createStatement();
+
+        String insert = "INSERT INTO Anuncios VALUES ('Pablo','Martinez','Quiere silencio')";
+        statement.execute(insert);
+
+        String query = "SELECT * FROM Anuncios";
+        Statement queryStatement = connection.createStatement();
+        ResultSet rs = queryStatement.executeQuery(query);
+
+        rs.last();
+        assertEquals(rs.getString(1), "Pablo");
+
+        String delete = "DELETE FROM Anuncios WHERE comments = 'Quiere silencio'";
+        Statement deleteStatement = connection.createStatement();
+        deleteStatement.execute(delete);
+
+        connection.close();
+
     }
 
 
