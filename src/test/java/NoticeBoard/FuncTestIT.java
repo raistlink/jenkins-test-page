@@ -26,6 +26,6 @@ public class FuncTestIT extends TestCase{
     }
 
     public void funcTest() throws Exception{
-        assertTrue(drv.getPageSource().contains("New Announcement"));
+        assertTrue(drv.getPageSource().contains("Notice Board"));
     }
 }
