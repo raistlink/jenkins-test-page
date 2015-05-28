@@ -1,6 +1,6 @@
 package NoticeBoard;
 
-
+import org.junit.Test;
 import static org.junit.Assert.*;
 
 import org.openqa.selenium.WebDriver;
@@ -11,7 +11,7 @@ import java.net.URL;
 /**
  * Created by Boots on 28/05/2015.
  */
-public class FuncTest extends TestCase{
+public class FuncTestIT extends TestCase{
     private URL siteBase;
     private WebDriver drv;
 
@@ -23,6 +23,7 @@ public class FuncTest extends TestCase{
         drv = new FirefoxDriver();
     }
 
+    @Test
     public void funcTest() throws Exception{
         assertTrue(drv.getPageSource().contains("New Announcement"));
     }

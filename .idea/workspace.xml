@@ -87,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FuncTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTest.java">
+      <file leaf-file-name="FuncTestIT.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTestIT.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.055555556">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.80452675">
+              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,6 +179,7 @@
         <option value="$PROJECT_DIR$/src/test/java/NoticeBoard/generalIT.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTestIT.java" />
       </list>
     </option>
   </component>
@@ -1211,10 +1212,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTest.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/NoticeBoard/FuncTestIT.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.055555556">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.80452675">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
