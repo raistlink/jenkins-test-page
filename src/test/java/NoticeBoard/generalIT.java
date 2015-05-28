@@ -22,7 +22,7 @@ public class generalIT{
     public void testDatabase() throws Exception{
 
         Class.forName("com.mysql.jdbc.Driver");
-        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306", "root", "admin");
+        Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/Announcements", "root", "admin");
 
         String query = "SELECT * FROM Anuncios";
         Statement queryStatement = connection.createStatement();
@@ -36,7 +36,7 @@ public class generalIT{
             assertEquals(anno.getComment(), rs.getString(2));
         }
     }
-    
+
 
 
 
