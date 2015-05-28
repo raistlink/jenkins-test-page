@@ -4,28 +4,18 @@ import static org.junit.Assert.*;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import junit.framework.TestCase;
 import java.net.URL;
 
+import org.junit.Test;
 
-public class FuncTestIT extends TestCase{
-    private URL siteBase;
-    private WebDriver drv;
+public class FuncTestIT{
 
-    @Override
-    protected void setUp() throws Exception {
-        super.setUp();
+    @Test
+    public void mainPageTest() throws Exception{
 
-        siteBase = new URL("http://localhost:10001/");
-        drv = new FirefoxDriver();
-    }
+        URL siteBase = new URL("http://localhost:10001/");
+        WebDriver drv = new FirefoxDriver();
 
-    @Override
-    protected  void tearDown() throws Exception{
-        super.tearDown();
-    }
-
-    public void funcTest() throws Exception{
         assertTrue(drv.getPageSource().contains("Notice Board"));
     }
 }
