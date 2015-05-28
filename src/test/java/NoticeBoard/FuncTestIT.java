@@ -10,7 +10,7 @@ import java.net.URL;
 import org.junit.Test;
 
 public class FuncTestIT{
-    @Ignore ("Firefox headless not working")
+    @Ignore("Firefox headless not working")
     @Test
     public void mainPageTest() throws Exception{
 
